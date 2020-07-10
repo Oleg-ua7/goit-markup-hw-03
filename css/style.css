@@ -27,6 +27,10 @@ body {
   font-family: var(--main-font);
 }
 
+img {
+  display: block;
+}
+
 /* Logo */
 
 .logo {
@@ -79,6 +83,13 @@ body {
 
 .link {
   text-decoration: none;
+  display: block;
+}
+
+.navigation-list-link,
+.header-list-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .navigation-list-item {
@@ -90,7 +101,32 @@ body {
   text-decoration: none;
 }
 
-.header-mail-link .link {
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo-item {
+  margin-right: 85px;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .header-mail-link .link {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -98,6 +134,24 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+
+.header .address {
+  display: flex;
+  align-items: center;
+}
+
+.address-mail {
+  margin-right: 30px;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-utils {
+  margin-left: auto;
 }
 
 .header-tel-link .link {
@@ -117,12 +171,36 @@ body {
 
 /* Hero */
 
+.hero {
+  display: flex;
+}
+
 .hero-title {
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 56px;
   line-height: 1.43;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  flex-wrap: wrap;
+}
+
+.modal-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Section */
@@ -152,6 +230,23 @@ body {
 
 /* advantages */
 
+.advanteges {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.master-list-item {
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+}
+
+.description {
+  padding-top: 55px;
+  padding-bottom: 10px;
+}
+
 .title {
   font-family: var(--main-font);
   font-weight: 700;
@@ -173,7 +268,15 @@ body {
   color: var(--secondary-text-color);
 }
 
+.advant-list:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*what are we doing*/
+
+.doing {
+  padding-bottom: 94px;
+}
 
 .title-doing {
   font-style: normal;
@@ -184,6 +287,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   font-family: var(--main-font);
+}
+
+.master-list {
+  display: flex;
+  justify-content: center;
 }
 
 .subdoing {
@@ -200,6 +308,10 @@ body {
 
 /*our team*/
 
+.our-team {
+  padding-bottom: 94px;
+}
+
 .team {
   font-family: var(--main-font);
   font-style: normal;
@@ -209,6 +321,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 
 .team-item {
@@ -220,6 +333,26 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+
+.social-icon {
+  padding-left: 32px;
+}
+
+.social-icon-list {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/*clients*/
+
+.clients {
+  padding-bottom: 94px;
+}
+
+.title-doing {
+  margin-bottom: 50px;
 }
 
 /*regular customers
@@ -228,6 +361,25 @@ body {
 .title-doing-icon:hover,
 .title-doing-icon:focus {
   background-color: var(--accent-color);
+}
+
+..title-doing-icon {
+  margin-top: 20px;
+  margin-right: 63px;
+  margin-bottom: 20px;
+  margin-left: 63px;
+}
+
+.title-doing-item {
+  display: flex;
+  justify-content: center;
+}
+
+.title-doing-list {
+  border: 1px solid;
+  width: 170px;
+  height: 90px;
+  margin-right: 30px;
 }
 
 /*footer*/
@@ -244,6 +396,25 @@ body {
 
 .studio:hover,
 .studio:focus {
+}
+
+.address-subtitle {
+  display: flex;
+  padding-bottom: 94px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.list-doing:not(:last-child) {
+  margin-right: 30px;
+}
+
+.address-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.picture {
+  margin-bottom: 30px;
 }
 
 .address-link {
